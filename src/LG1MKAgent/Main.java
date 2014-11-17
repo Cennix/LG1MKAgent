@@ -16,14 +16,14 @@ public class Main
         InputStreamReader inputStreamReader = new InputStreamReader(System.in);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
         String inputLine = bufferedReader.readLine();
-        GameState gameState = new GameState();
+        GameTreeBuilder gameTreeBuilder = new GameTreeBuilder();
         Agent agent = new Agent();
         Player nextPlayer = null;
         while (!inputLine.contains("END"))
         {
             try
             {
-                // nextPlayer = InputParser.parseInputLine(inputLine, gameState);?????
+                nextPlayer = InputParser.parseInputLine(inputLine, gameTreeBuilder);?????
                 if (nextPlayer == Player.ThisAgent)
                 {
                     MoveSwap nextMove = agent.getNextMove(gameState);

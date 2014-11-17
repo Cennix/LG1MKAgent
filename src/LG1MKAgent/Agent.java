@@ -7,7 +7,7 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
  */
 public class Agent
 {
-    public MoveSwap getNextMove(GameState gameState)
+    public Move getNextMove(GameTreeBuilder gameTreeBuilder)
     {
         throw new NotImplementedException();
     }

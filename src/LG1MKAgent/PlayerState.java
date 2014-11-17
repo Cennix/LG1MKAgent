@@ -10,10 +10,12 @@ import java.util.Arrays;
 public class PlayerState
 {
     private PlayerPosition _playerPosition;
+
     public PlayerState(PlayerPosition playerPosition)
     {
         _playerPosition = playerPosition;
     }
+
     public void swap()
     {
         if (_playerPosition == PlayerPosition.North)
@@ -26,6 +28,4 @@ public class PlayerState
         }
     }
 
-    public void updatePlayersNumberOfSeeds(int[] numberOfSeedsInEachHoleForAll) {
-    }
 }
